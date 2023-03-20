@@ -1,4 +1,4 @@
-def test(*value, end="\n"):
+def test(*value, end="\n"): # type(value) -> tuple
     print(value)
     print(type(value))
     print(end)
