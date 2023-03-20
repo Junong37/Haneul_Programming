@@ -4,7 +4,10 @@ import random
 word_list = ["hello world", "hi world", "This is the test sentence"]
 random.shuffle(word_list)
 
-difficulty = int(input("Set difficulty (1 ~ 10): "))
+difficulty = 100
+while not 0 < difficulty < 11:
+    difficulty = int(input("Set difficulty (1 ~ 10): "))
+
 time_per_letter = 1 / difficulty
 print("time per letter: {}".format(time_per_letter))
 
