@@ -1,0 +1,3 @@
+([('seats',
+   '/Users/junyong/Documents/Haneul/PythonWorkspace/practice/dist/seats',
+   'EXECUTABLE')],)
