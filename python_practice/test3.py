@@ -1,2 +1,6 @@
-print(str(1.2))
-print(type(str(1.2)))
+a = input()
+
+b = int(a[0])
+c = int(a[1])
+
+print(b + c)
