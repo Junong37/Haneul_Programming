@@ -14,7 +14,7 @@ monitor_width = root.winfo_screenwidth()
 root.geometry("{}x{}+0+0".format(monitor_width, monitor_height))
 
 # 반 이름 리스트 선언(여자, 남자)
-with open("/Users/junyong/Documents/Haneul/PythonWorkspace/practice/list.txt", "r") as file:
+with open("mac_save\practice\list.txt", "r", encoding="UTF8") as file:
     contents = file.read()
 l1 = contents.split(sep = '\n', maxsplit = 1)
 
@@ -41,13 +41,13 @@ class RandomSeats:
 
             for repeat_col in column_range:
                 globals()['text{},{}'.format(repeat_row, repeat_col)] = StringVar() # 전역변수 추가
-
+        print(globals())
         # 라벨 하나하나 지정
         for repeat_row in row_range:
 
             for repeat_col in column_range:
                 globals()['lab{},{}'.format(repeat_row,repeat_col)] = \
-                Label(root, textvariable= globals()['text{},{}'.format(repeat_row,repeat_col)],font = tkFont.Font(size = 20, weight = "bold"))\
+                Label(root, textvariable= globals()['text{},{}'.format(repeat_row,repeat_col)],font = tkFont.Font(size = 10, weight = "bold"))\
                 .grid(row = repeat_row, column = repeat_col, padx = int(monitor_width//24), pady = int(monitor_height//20) )
 
 

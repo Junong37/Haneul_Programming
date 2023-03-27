@@ -1,6 +1,2 @@
-a = input()
-
-b = int(a[0])
-c = int(a[1])
-
-print(b + c)
+list = [i for i in range(5)]
+print(list[-2::-1])

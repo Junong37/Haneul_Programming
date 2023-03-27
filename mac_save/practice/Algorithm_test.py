@@ -17,6 +17,6 @@ for i in range(len(list_a)):
     list_a[i] = min
     list_a[index] = temp
     
-#print(list_a)
+print(list_a)
 #print(time.time())
 print(time.time() - a)
