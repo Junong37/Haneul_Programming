@@ -41,7 +41,7 @@ class RandomSeats:
 
             for repeat_col in column_range:
                 globals()['text{},{}'.format(repeat_row, repeat_col)] = StringVar() # 전역변수 추가
-        print(globals())
+        
         # 라벨 하나하나 지정
         for repeat_row in row_range:
 
