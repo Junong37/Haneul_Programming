@@ -4,6 +4,7 @@ while True:
     a = int(input())
     
     if a >= 10:
+        print(i)
         break
     elif a == 5:
         print("hi")
